@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RinBakery Game 🍰</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game">
+
+    <header class="topbar">
+
+        <div class="brand">
+            <div class="logo">🧁</div>
+
+            <div>
+                <h1>RinBakery</h1>
+                <p>Sweet Bakery Game</p>
+            </div>
+        </div>
+
+        <button id="soundBtn">🔊</button>
+
+    </header>
+
+
+    <section class="stats">
+
+        <div class="stat">
+            <span>⭐</span>
+            <div>
+                <small>SKOR</small>
+                <b id="score">0</b>
+            </div>
+        </div>
+
+        <div class="stat">
+            <span>💰</span>
+            <div>
+                <small>UANG</small>
+                <b id="money">0</b>
+            </div>
+        </div>
+
+        <div class="stat">
+            <span>❤️</span>
+            <div>
+                <small>NYAWA</small>
+                <b id="lives">3</b>
+            </div>
+        </div>
+
+        <div class="stat">
+            <span>🏆</span>
+            <div>
+                <small>BEST</small>
+                <b id="best">0</b>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="customer-card">
+
+        <div class="customer">
+
+            <div
+                class="customer-avatar"
+                id="customerAvatar"
+            >
+                👩🏻
+            </div>
+
+            <div>
+                <span>Pelanggan</span>
+                <h2 id="customerName">Maya</h2>
+            </div>
+
+        </div>
+
+
+        <div class="order">
+
+            <p>💬 "Saya mau pesan..."</p>
+
+            <h2 id="orderText">
+                🍓 Strawberry Cake
+            </h2>
+
+        </div>
+
+
+        <div class="timer">
+
+            <div id="timerBar"></div>
+
+        </div>
+
+
+        <div class="time-text">
+
+            Waktu:
+
+            <b id="time">10.0</b>
+
+            detik
+
+        </div>
+
+    </section>
+
+
+    <section class="bakery">
+
+        <h2>🍰 Pilih Pesanan</h2>
+
+        <div
+            id="menu"
+            class="menu"
+        ></div>
+
+    </section>
+
+
+    <div
+        id="message"
+        class="message"
+    ></div>
+
+
+    <footer>
+        Made with 🍰 by RinBakery
+    </footer>
+
+</div>
+
+
+<!-- START GAME -->
+
+<div
+    id="startScreen"
+    class="overlay"
+>
+
+    <div class="popup">
+
+        <div class="big-icon">
+            🧁
+        </div>
+
+        <h1>RinBakery</h1>
+
+        <h2>Bakery Rush!</h2>
+
+        <p>
+            Layani pelanggan dengan cepat,
+            pilih kue yang mereka pesan,
+            dan kumpulkan uang sebanyak mungkin!
+        </p>
+
+        <button id="startBtn">
+            🎮 MULAI BERMAIN
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- GAME OVER -->
+
+<div
+    id="gameOver"
+    class="overlay hidden"
+>
+
+    <div class="popup">
+
+        <div class="big-icon">
+            🏆
+        </div>
+
+        <h1>Hari Selesai!</h1>
+
+        <p>Skor kamu</p>
+
+        <div
+            id="finalScore"
+            class="final-score"
+        >
+            0
+        </div>
+
+        <p id="record"></p>
+
+        <button id="restartBtn">
+            🔄 MAIN LAGI
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
